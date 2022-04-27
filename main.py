@@ -1,16 +1,21 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import pywhatkit
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def send_message_inst():
+    mobile = input('Введите номер получателя: ')
+    message = input('Текст сообщения: ')
+    pywhatkit.sendwhatmsg_instantly(phone_no=mobile, message=message)
 
 
-# Press the green button in the gutter to run the script.
+def send_message():
+    mobile = input('Введите номер получателя: ')
+    message = input('Текст сообщения: ')
+    hour = int(input('Введите часы: '))
+    minutes = int(input('Введите минуты: '))
+    pywhatkit.sendwhatmsg_instantly(phone_no=mobile, message=message, time_hour=hour, time_min=minutes)
+
+def main():
+    send_message_inst()
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
