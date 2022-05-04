@@ -1,4 +1,4 @@
-import pywhatki
+import pywhatkit
 
 
 def send_message_inst():
