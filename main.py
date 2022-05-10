@@ -17,5 +17,5 @@ def send_message():
 def main():
     send_message_inst()
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     main()
