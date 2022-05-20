@@ -11,7 +11,7 @@ def send_message():
     mobile = input('Введите номер получателя: ')
     message = input('Текст сообщения: ')
     hour = int(input('Введите часы: '))
-    minutes = int(input('Введите минуты:'))
+    minutes = int(input('Введите минуты: '))
     pywhatkit.sendwhatmsg_instantly(phone_no=mobile, message=message, time_hour=hour, time_min=minutes)
 
 def main():
